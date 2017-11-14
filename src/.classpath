@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-aop-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-beans-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-boot-1.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-boot-autoconfigure-1.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-context-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-core-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-expression-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-web-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/mukesh/Office/india_lib/spring/spring-webmvc-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
