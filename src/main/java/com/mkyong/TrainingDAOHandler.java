@@ -4,7 +4,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import lombok.Builder;
+
 public class TrainingDAOHandler {
+
+    private TrainingRecord tainingRecord;
+
+    @Builder
+    TrainingDAOHandler(TrainingRecord tainingRecord) {
+        this.tainingRecord = tainingRecord;
+    }
 
     private static final String TABLE_TRAINING_INFO         = "trainer_info";
     private static final String TABLE_TRAINING_SCHEDULE     = "training_schedule";
@@ -17,33 +26,31 @@ public class TrainingDAOHandler {
     private static final String SQL_GET_TRAINING_INFO       = "select * from  " + TABLE_TRAINING_SCHEDULE
             + " where start_date = (?) ";
 
-    public static void storeTrainingDetails(int trainerID, String trainerName, String domain, String collegeName,
-            String trainingName, String date, int duration) {
+    public void storeTrainingDetails() {
         PreparedStatement stmt = null;
         Connection conn = null;
         try {
             conn = MysqlConnection.getConnection();
             stmt = conn.prepareStatement(SQL_STORE_TRAINING_INFO);
-            stmt.setInt(1, trainerID);
-            stmt.setString(2, trainerName);
-            stmt.setString(3, domain);
+            stmt.setInt(1, tainingRecord.getTrainerID());
+            stmt.setString(2, tainingRecord.getTrainerName());
+            stmt.setString(3, tainingRecord.getDomain());
             stmt.executeUpdate();
             System.out.println("executeUpdate  for " + stmt.toString());
             MysqlConnection.closeConnection(conn, stmt);
 
             conn = MysqlConnection.getConnection();
             stmt = conn.prepareStatement(SQL_STORE_TRAINING_SCHEDULE);
-            stmt.setInt(1, trainerID);
-            stmt.setString(2, trainerName);
-            stmt.setString(3, date);
-            stmt.setInt(4, duration);
-            stmt.setString(5, collegeName);
+            stmt.setInt(1, tainingRecord.getTrainerID());
+            stmt.setString(2, tainingRecord.getTrainerName());
+            stmt.setString(3, tainingRecord.getDate());
+            stmt.setInt(4, tainingRecord.getDuration());
+            stmt.setString(5, tainingRecord.getCollegeName());
             stmt.executeUpdate();
             System.out.println("executeUpdate  for " + stmt.toString());
 
         } catch (Exception e) {
-
-            System.out.println("Exception  for " + e);
+            e.printStackTrace();
         } finally {
             MysqlConnection.closeConnection(conn, stmt);
         }

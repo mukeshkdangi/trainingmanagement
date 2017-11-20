@@ -1,5 +1,7 @@
 com/mkyong/MysqlConnection.class
+com/mkyong/TrainingRecord.class
 com/mkyong/WelcomeController.class
 com/mkyong/TrainingDAOHandler.class
 com/mkyong/SpringBootWebApplication.class
+com/mkyong/TrainingDAOHandler$TrainingDAOHandlerBuilder.class
 com/mkyong/TrainingDAO.class
