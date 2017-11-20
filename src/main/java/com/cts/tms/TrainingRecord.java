@@ -1,4 +1,4 @@
-package com.mkyong;
+package com.cts.tms;
 
 public class TrainingRecord {
     private int    trainerID;
