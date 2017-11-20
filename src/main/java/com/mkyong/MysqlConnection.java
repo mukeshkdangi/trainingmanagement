@@ -16,7 +16,7 @@ public class MysqlConnection {
 
     // Database credentials
     static final String USER        = "root";
-    static final String PASS        = "msjhumapc4";
+    static final String PASS        = "XXXXXXXX";
 
     public static Connection getConnection() {
         Connection conn = null;
