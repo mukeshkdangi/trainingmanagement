@@ -1,6 +1,6 @@
-/Users/mukesh/Office/CTSProject/src/main/java/com/mkyong/MysqlConnection.java
-/Users/mukesh/Office/CTSProject/src/main/java/com/mkyong/TrainingDAOHandler.java
-/Users/mukesh/Office/CTSProject/src/main/java/com/mkyong/TrainingDAO.java
-/Users/mukesh/Office/CTSProject/src/main/java/com/mkyong/WelcomeController.java
-/Users/mukesh/Office/CTSProject/src/main/java/com/mkyong/SpringBootWebApplication.java
-/Users/mukesh/Office/CTSProject/src/main/java/com/mkyong/TrainingRecord.java
+/Users/mukesh/Office/CTSProject/src/main/java/com/cts/tms/TrainingDAOHandler.java
+/Users/mukesh/Office/CTSProject/src/main/java/com/cts/tms/WelcomeController.java
+/Users/mukesh/Office/CTSProject/src/main/java/com/cts/tms/MysqlConnection.java
+/Users/mukesh/Office/CTSProject/src/main/java/com/cts/tms/SpringBootWebApplication.java
+/Users/mukesh/Office/CTSProject/src/main/java/com/cts/tms/TrainingDAO.java
+/Users/mukesh/Office/CTSProject/src/main/java/com/cts/tms/TrainingRecord.java

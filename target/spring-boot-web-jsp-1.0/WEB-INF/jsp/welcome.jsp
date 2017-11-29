@@ -30,7 +30,8 @@
 		<tr>
 			<td>
 				<div class="box-middle">
-					<form method="post" action="saveDetails">
+					<form method="post" action="saveDetails"
+						modelAttribute="trainingRecord">
 						Trainer ID : <input type="text" name="trainerID" /> Trainer Name:
 						<input type="text" name="trainerName"> <select id="domain"
 							name="domain">
@@ -80,8 +81,14 @@
 			style="margin-left: 700px; width: 100px; font-size: initial; font-family: initial; background-color: lavender; font-weight: bold;"
 			type="submit" value="SUBMIT">
 	</div>
+	<input
+		style="font-size: initial; font-family: initial; background-color: lavender; font-weight: bold; margin-left: 400px;"
+		value="Get Training Schedule"
+		onclick="window.location.href='getTrainingSchedule'">
+	</div>
 	</form>
 	</div>
+
 	<div class="box-bottom"></div>
 	</div>
 

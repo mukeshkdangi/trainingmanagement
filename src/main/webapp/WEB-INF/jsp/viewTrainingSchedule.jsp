@@ -20,29 +20,35 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<h2>Scheduled Training Details for Requested Date  </h2>
-		<c:forEach var="training" items="${trainingDetails}">
-		<br/>
-	<table>
-        <tr>
-            <th>Trainer ID</th><th>Trainer Name</th> <th>College</th> <th>Training Name</th> <th>Duration</th> <th>Domain</th>
-        </tr>
-        <tr>
-            <td>${training.trainerID}</td>
-            <td>${training.trainerName}</td>
-            <td>${training.collegeName} </td>
-            <td>${training.trainingName}</td>
-            <td>${training.duration}</td>
-            <td>${training.domain}</td>
-       
-        </tr>
-    </table>
-    
-		</c:forEach>
+			<h2>Scheduled Training Details for Requested Date</h2>
+			<c:forEach var="training" items="${trainingDetails}">
+				<br />
+				<table>
+					<tr>
+						<th>Trainer ID</th>
+						<th>Trainer Name</th>
+						<th>College</th>
+						<th>Training Name</th>
+						<th>Duration</th>
+						<th>Domain</th>
+					</tr>
+					<tr>
+						<td>${training.trainerID}</td>
+						<td>${training.trainerName}</td>
+						<td>${training.collegeName}</td>
+						<td>${training.trainingName}</td>
+						<td>${training.duration}</td>
+						<td>${training.domain}</td>
+
+					</tr>
+				</table>
+
+			</c:forEach>
+			<input
+				style="font-size: initial; font-family: initial; background-color: lavender; font-weight: bold; margin-left: 500px; margin-top: 20px; width: 200px;"
+				value="Insert new Training Details"
+				onclick="window.location.href='/'">
 		</div>
-		
-		
-		<a href="getTrainingSchedule">Get Training Schedule</a>
 
 	</div>
 

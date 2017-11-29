@@ -20,12 +20,11 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<h2>Schedule Training </h2>
-			<h3>Trainer ID   :   ${trainerID}  Trainer Name     :  ${trainerName}</h3>
-			<div>
-			Domain    :   ${domain}</div>
-			<h3>
+			Record has been successfully saved.
 		</div>
+		<input
+			style="font-size: initial;font-family: initial;background-color: lavender;font-weight: bold;margin-left: 500px;margin-top: 20px;width: 200px;"
+			value ="Insert new Training Details" onclick="window.location.href='/'">
 
 	</div>
 
