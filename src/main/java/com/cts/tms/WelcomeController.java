@@ -7,14 +7,18 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.google.gson.Gson;
+
 /**
  * 
- * @author Uday Menon   
+ * @author Uday Menon
  */
 @Controller
 public class WelcomeController {
@@ -30,21 +34,25 @@ public class WelcomeController {
         return "welcome";
     }
 
-    @PostMapping("/saveDetails") // it only support port method
-    public String saveDetails(@RequestBody TrainingRecord tainingRecord, ModelMap modelMap, HttpServletRequest httpRe) {
+    @PostMapping(value = "/saveDetails") // it only support port method
+    public String saveDetails(@ModelAttribute("trainingRecord") TrainingRecord tainingRecord, ModelMap modelMap, HttpServletRequest httpRe) {
+       // TrainingRecord tainingRecord = new Gson().fromJson(tainingRecordStr, TrainingRecord.class);
         TrainingDAOHandler.builder().tainingRecord(tainingRecord).build().storeTrainingDetails();
-        TrainingDAOHandler.getTrainingDetailsByDate(tainingRecord.getDate());
         modelMap.put("trainerID", "Success");
 
         return "viewDetails"; // welcome is view name. It will call welcome.jsp
     }
 
+    @GetMapping("/getTrainingSchedule")
+    public String getTrainingScheduleLink() {
+        return "getTrainingSchedule";
+    }
+
     @PostMapping("/getDetails")
     public String getTrainingDetails(@RequestParam String date, ModelMap modelMap, HttpServletRequest httpRe) {
-        TrainingDAOHandler.getTrainingDetailsByDate(date);
-        modelMap.put("trainerID", "Success");
+        modelMap.put("trainingDetails", TrainingDAOHandler.getTrainingDetailsByDate(date));
 
-        return "viewDetails"; // welcome is view name. It will call welcome.jsp
+        return "viewTrainingSchedule"; //
     }
 
 }

@@ -17,18 +17,27 @@
 </head>
 <body>
 
-	<div class="container">
-
-		<div class="starter-template">
-			<h2>Schedule Training </h2>
-			<h3>Trainer ID   :   ${trainerID}  Trainer Name     :  ${trainerName}</h3>
-			<div>
-			Domain    :   ${domain}</div>
-			<h3>
+	<div id="box1" class="box">
+		<div class="box-top">
+			<h2>Get Training Schedule</h2>
 		</div>
-		<a href="getTrainingSchedule">Get Training Schedule</a>
-
 	</div>
+
+	<div class="box-middle">
+		<form method="post" action="getDetails">
+			<div>
+			<input type="date" name="date" />
+				<input
+					style="margin-left: 700px; font-size: initial; font-family: initial; background-color: lavender; font-weight: bold;"
+					type="submit" value="Get Training Schedule">
+			</div>
+		</form>
+	</div>
+	<a href="/">Insert new Training Details</a>
+	<div class="box-bottom"></div>
+	</div></div>
+
+
 
 
 	<!-- /.container -->

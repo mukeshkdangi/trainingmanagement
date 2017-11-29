@@ -30,7 +30,7 @@
 		<tr>
 			<td>
 				<div class="box-middle">
-					<form method="post" action="saveDetails">
+					<form method="post" action="saveDetails" modelAttribute="trainingRecord">
 						Trainer ID : <input type="text" name="trainerID" /> Trainer Name:
 						<input type="text" name="trainerName"> <select id="domain"
 							name="domain">
@@ -82,6 +82,7 @@
 	</div>
 	</form>
 	</div>
+	<a href="getTrainingSchedule">Get Training Schedule</a>
 	<div class="box-bottom"></div>
 	</div>
 

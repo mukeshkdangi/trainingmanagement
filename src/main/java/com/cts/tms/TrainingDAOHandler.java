@@ -3,6 +3,8 @@ package com.cts.tms;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import lombok.Builder;
 
@@ -57,9 +59,10 @@ public class TrainingDAOHandler {
 
     }
 
-    public static void getTrainingDetailsByDate(String date) {
+    public static List<TrainingRecord> getTrainingDetailsByDate(String date) {
         PreparedStatement stmt = null;
         Connection conn = null;
+        List<TrainingRecord> tRecordList = new ArrayList<>();
         try {
             conn = MysqlConnection.getConnection();
             stmt = conn.prepareStatement(SQL_GET_TRAINING_INFO);
@@ -67,11 +70,15 @@ public class TrainingDAOHandler {
             ResultSet result = stmt.executeQuery();
             System.out.println("executeUpdate  for " + stmt.toString());
             while (result.next()) {
-                System.out.println("trainer_id  for " + result.getString("trainer_id"));
-                System.out.println("trn_name  for " + result.getString("trn_name"));
-                System.out.println("start_date  for " + result.getString("start_date"));
-                System.out.println("college_name  for " + result.getString("college_name"));
-                System.out.println("duration  for " + result.getInt("duration"));
+                TrainingRecord tRecord = new TrainingRecord();
+                tRecord.setTrainerID(result.getInt("trainer_id"));
+                tRecord.setTrainerName(result.getString("trn_name"));
+                tRecord.setDate(result.getString("start_date"));
+                //tRecord.setTrainingName(result.getString("start_date"));
+                tRecord.setCollegeName(result.getString("college_name"));
+                tRecord.setDuration(result.getInt("duration"));
+               // tRecord.setDomain(result.getString("domain"));
+                tRecordList.add(tRecord);
             }
 
         } catch (Exception e) {
@@ -79,6 +86,7 @@ public class TrainingDAOHandler {
         } finally {
             MysqlConnection.closeConnection(conn, stmt);
         }
+        return tRecordList;
 
     }
 

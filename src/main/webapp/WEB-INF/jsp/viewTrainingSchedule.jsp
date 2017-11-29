@@ -20,12 +20,28 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<h2>Schedule Training </h2>
-			<h3>Trainer ID   :   ${trainerID}  Trainer Name     :  ${trainerName}</h3>
-			<div>
-			Domain    :   ${domain}</div>
-			<h3>
+			<h2>Scheduled Training Details for Requested Date  </h2>
+		<c:forEach var="training" items="${trainingDetails}">
+		<br/>
+	<table>
+        <tr>
+            <th>Trainer ID</th><th>Trainer Name</th> <th>College</th> <th>Training Name</th> <th>Duration</th> <th>Domain</th>
+        </tr>
+        <tr>
+            <td>${training.trainerID}</td>
+            <td>${training.trainerName}</td>
+            <td>${training.collegeName} </td>
+            <td>${training.trainingName}</td>
+            <td>${training.duration}</td>
+            <td>${training.domain}</td>
+       
+        </tr>
+    </table>
+    
+		</c:forEach>
 		</div>
+		
+		
 		<a href="getTrainingSchedule">Get Training Schedule</a>
 
 	</div>
