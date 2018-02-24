@@ -33,8 +33,9 @@
 			<input
 				style="font-size: initial; font-family: initial; background-color: lavender; font-weight: bold; margin-left: 500px; margin-top: 20px; width: 200px;"
 				value="Add more Training Records" onclick="window.location.href='/'">
+				
 			<input
-				style="font-size: initial; font-family: initial; background-color: lavender; font-weight: bold; margin-left: 400px;"
+				style="font-size: initial; font-family: initial; background-color: lavender; font-weight: bold; margin-left: 300px;margin-top: 50px;"
 				value="Get Training Schedule"
 				onclick="window.location.href='/getTrainingSchedule'">
 		</form>
