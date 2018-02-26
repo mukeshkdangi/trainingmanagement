@@ -7,15 +7,15 @@ import java.sql.Statement;
 
 /**
  * 
- * @author Uday Menon 11:00:05 pm
+ * @author Mukesh Dangi 11:00:05 pm
  */
 
 public class MysqlConnection {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL      = "jdbc:mysql://localhost:3306/tms";
+    static final String DB_URL      = "jdbc:mysql://mts.cebpqr8ilu5f.us-east-1.rds.amazonaws.com/mts";
 
     // Database credentials
-    static final String USER        = "root";
+    static final String USER        = "mukeshkdangi";
     static final String PASS        = "msjhumapc4";
 
     public static Connection getConnection() {

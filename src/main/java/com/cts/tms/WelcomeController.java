@@ -18,18 +18,13 @@ import com.google.gson.Gson;
 
 /**
  * 
- * @author Uday Menon
+ * @author Mukesh Dangi
  */
 @Controller
 public class WelcomeController {
 
-    // inject via application.properties
-    @Value("${welcome.message:test}")
-    private String message = "Welcome";
-
     @RequestMapping("/")
     public String welcome(Map<String, Object> model) {
-        model.put("message", this.message);
 
         return "welcome";
     }
