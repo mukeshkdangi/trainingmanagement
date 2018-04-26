@@ -2,7 +2,7 @@
 Training Management System
 
 
-# Spring Boot + Emb Tomcat and JSP
+# Spring Boot + Emb Tomcat and JSP + AWS Deployment 
 
 A simple CTS training management system 
 1. Insert Training Schedule  info
