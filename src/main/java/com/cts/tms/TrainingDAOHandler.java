@@ -31,6 +31,7 @@ public class TrainingDAOHandler {
     public void storeTrainingDetails() {
         PreparedStatement stmt = null;
         Connection conn = null;
+
         try {
             conn = MysqlConnection.getConnection();
             stmt = conn.prepareStatement(SQL_STORE_TRAINING_INFO);
