@@ -1,4 +1,17 @@
-<html><head><title>Dangi</title>
+<html><head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126698576-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126698576-1');
+</script>
+
+
+  <title>Dangi</title>
 
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -48,9 +61,11 @@
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>CS Graduate @USC.  Former Software Eng @via.com</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          Actively Seeking Full-Time Opportunities, May'2019. CS Grad Student @ USC, LA. Former SDE II at Via.com
+          </p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Los Angles, USA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>mukeshusc2018[@]gmail[dot]com</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>mukesh2018usc[@]gmail[dot]com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
           <hr>
 
@@ -69,21 +84,14 @@
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+         
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
           <p>English</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:97%"></div>
           </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
+         
 
           <br>
         </div>
@@ -99,15 +107,22 @@
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Application Architect @AMI USC</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Student work</h6>
+          <h5 class="w3-opacity"><b>Software Engineer -Student @AMI USC</b></h5>
+          <h6>Design and development of cloud architecture of Alzheimer project for USC AMI. Developing new med software and improving performance of existing inhouse software. <br/>Technologies: MATLAB, AWS, JAVA. </h6>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 -Present</h6>
 
           <hr>
         </div>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sen. Software Developer @via.com</b></h5>
+          <h5>Sen. Software Developer @via.com<br/>
+          PROFESSIONAL EXPERIENCE
+                    Software Development Engineer II       Via.com (Ebix IN)   <br/>                                        
+                  ● Understanding new requirements for the Asia pacific Market and communicating with country manager and business leaders.<br/>
+                    ● Developed new e-com products and applications for B2B and B2C customers to support multi-lingual and multicurrency requirenments. <br/>   
+                    ● Introduced latest coding practices, tools, design patterns and code refactoring / code decoupling for micro services architecture.<br/>
+
+</h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2014 - Dec-2017</h6>
           <hr>
         </div>
@@ -126,14 +141,41 @@
           <h5 class="w3-opacity"><b>University of Southern California, LA</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019</h6>
           <p>Master Degree(Computer Science)</p>
+          <p>PROJECTS                 <br/>
+• <b>Software architecture visualization-</b> Proposed and developed a visualization tool to provides level hierarchy of system’s architecture and highlights areas of vulnerability, components and connectivity in software. Visualization could be useful to users, developers and architect with a better understanding of system’s core components. Technologies: Java, NodeJS, AWS.<br/><br/>
+
+<b>• Spatial Database - </b> Create, visualize and query spatial data including 3D objects generation, finding convex hull and Epitrochoid curve for disaster (flood, Tsunami etc.) management.  Some other academic projects are Image classification and prediction analysis, online property rental system.           Technologies: Google Cloud (SQL), Google earth(GitHub:mukeshkdangi).
+</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>VIT University, Vellore</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2014</h6>
           <p>Bachelor Degree</p><br>
+          <p> <b> Remote Sensed Image Retrieval System Using Semantic net, Grid Computing and Advanced database concepts-</b> Developed an image content and information retrieval system. Aim was to improve performance of existing image retrieval system. <br/><br/>
+         <b>• Online Book Sales System via Mobile Tech-</b> Notification and Book management system, notifies user when book is in stock.<br/><br/>
+          <b>• Automatic Train Control System -</b> Designed and developed an automatic train controller system to automates and regulates the speed using advanced signaling system. System engineered microcontrollers at fixed distance and one GSM system to communicate with train signals.
+          </p>
         </div>
       </div>
+       <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>TECHNICAL SKILLS</h2>
+          <div> 
+        <b>Programming languages:</b> JAVA, Python, C++.  <br/>
+        <b>Cloud Technologies:</b> AWS, Google Cloud. Strong experience on Spring MVC/Boot, 
+        RESTful Services, Docker, Maven, Git, Selenium, Jenkins, MySQL, PgSQL, JPA, Hibernate, Radis, Hadoop, Kafka, Solr, Web Crawling. <br/>
+        <b>Web Technologies:</b> HTML5, CSS3, JavaScript, AJAX. </div>
+
+      <!-- End Right Column -->
+
+</div>
+       <div class="w3-container w3-card w3-white">
+        <h2><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>RESEARCH PUBLICATIONS </h2>
+          <div>
+          <b>•Encryption of Binary String Using DNA Sequence”, TIJSA [Volume 2 ISSN – 2278-1080, April 2013]. </b><br/>
+       <b>• “Encryption of Multiple Messages Using Hamiltonian Circuit and Time dependent Function” IJETED [Issue 3, Vol.2 (March 2013)]. </b><br/>
+    <b>• “Remote sensing image retrieval using object-based, semantic classifier techniques”. </b>
+</div>
 
       <!-- End Right Column -->
     </div>
